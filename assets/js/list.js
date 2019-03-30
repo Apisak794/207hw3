@@ -75,6 +75,7 @@ class Book {
       document.querySelector('#title').value = '';
       document.querySelector('#author').value = '';
       document.querySelector('#isbn').value = '';
+      document.querySelector('#message').value = '';
     }
   }
   
@@ -138,7 +139,7 @@ class Book {
       Store.addBook(book);
   
       // 13. Show success message
-      UI.showAlert('Book Added', 'success');
+      //UI.showAlert('Book Added', 'success');
   
       // 9. Clear fields
       UI.clearFields();
@@ -156,6 +157,6 @@ class Book {
     Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
   
     // 13. Show success message
-    UI.showAlert('Book Removed', 'success');
+    //UI.showAlert('Book Removed', 'success');
   });
   
