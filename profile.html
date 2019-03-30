@@ -88,54 +88,70 @@
 		</section>
 
 		<!-- Footer -->
+
 		<section id="footer">
-			<div class="inner">
-				<h2 class="major">Contact</h2>
-				<form method="post" action="#" id="my-form">
-					<div class="fields">
-						<div class="field">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
+				<div class="inner">
+					<h2 class="major">Contact</h2>
+					<form id="book-form">
+						<div class="form-group">
+							<label for="title">name</label>
+							<input type="text" id="title" class="form-control">
 						</div>
-						<div class="field">
-							<label for="email">Email</label>
-							<input type="email" name="email" id="email" />
+						<div class="form-group">
+							<label for="author">E-mail</label>
+							<input type="text" id="author" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="isbn">phone-number</Title></label>
+							<input type="text" id="isbn" class="form-control">
 						</div>
 						<div class="field">
 							<label for="message">Message</label>
 							<textarea name="message" id="message" rows="4"></textarea>
-						</div>
-					</div>
-					<ul class="actions">
-						<li><input type="submit" value="Submit" class="btn btn-primary"></li>
+						</div><br>
+						<input type="submit" value="submit" class="btn btn-primary btn-block">
+					</form>
+	
+					<ul class="contact">
+						<li class="fa-home">
+							จ.ลำพูน อ.เมือง ต.อุโมงค์ บ้านเลขที่ 152
+						</li>
+						<li class="fa-phone">(+66)-972-130611</li>
+						<li class="fa-envelope"><a href="#"><a
+									href="mailto:apisak_vanitchakool@cmu.ac.th">apisak_vanitchakool@cmu.ac.th</a></a></li>
 					</ul>
-				</form>
-				<ul class="contact">
-					<li class="fa-home">
-						จ.ลำพูน อ.เมือง ต.อุโมงค์ บ้านเลขที่ 152
-					</li>
-					<li class="fa-phone">(+66)-972-130611</li>
-					<li class="fa-envelope"><a href="#"><a href="mailto:apisak_vanitchakool@cmu.ac.th">apisak_vanitchakool@cmu.ac.th</a></a></li>
-					<li class="fa-facebook"><a href="#">https://web.facebook.com/mean.jubjub.98</a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Untitled Inc. All rights reserved.</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</section>
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/mem.js"></script>
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+	
+					<ul class="copyright">
+						<table class="table table-striped mt-5">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>E-mail</th>
+									<th>phone-number</th>
+									<th></th>
+								</tr>
+							</thead>
+							<!-- 9. add placeholder to insert list of book       -->
+							<tbody id="book-list"></tbody>
+						</table>
+						<br>
+						<li>&copy; Untitled Inc. All rights reserved.</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</section>
+	
+		</div>
+	
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/list.js"></script>
+	
 </body>
 
 </html>
