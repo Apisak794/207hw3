@@ -51,6 +51,7 @@ class Book {
       // if element contains .delete class
       if(el.classList.contains('delete')) {
       // remove <a> -> <td> -> <tr>       
+      
         el.parentElement.parentElement.remove();
       }
     }
@@ -96,18 +97,18 @@ class Book {
       localStorage.setItem('books', JSON.stringify(books));
     }
   
-    static removeBook(isbn) {
-      const books = Store.getBooks();
-  
-      books.forEach((book, index) => {
-        if(book.isbn === isbn) {
-          books.splice(index, 1);
-        }
-      });
-  
-      localStorage.setItem('books', JSON.stringify(books));
-    }
-  }
+    static removeBook(email) {
+		const books = Store.getBooks();
+
+		books.forEach((book, index) => {
+			if(book.email === email) {
+				books.splice(index, 1);
+			}
+		});
+
+		localStorage.setItem('books', JSON.stringify(books));
+	}
+}
   
   // 4. Event: Display Books
   document.addEventListener('DOMContentLoaded', UI.displayBooks);
