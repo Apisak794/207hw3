@@ -64,10 +64,10 @@ class Book {
       div.appendChild(document.createTextNode(message));
       const container = document.querySelector('.container');
       const form = document.querySelector('#book-form');
-      container.insertBefore(div, form);
+      //container.insertBefore(div, form);
   
       // Vanish in 3 seconds
-      setTimeout(() => document.querySelector('.alert').remove(), 3000);
+      //setTimeout(() => document.querySelector('.alert').remove(), 3000);
     }
   
   // 9. clear fields  
